@@ -9,6 +9,42 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
+  <script>
+    function showme()
+    {
+        //alert("Halo Selamat Datang");
+        Swal.fire({
+        title: "Hallo!",
+        text: "Selamat Datang!",
+        icon: "success"
+        });
+
+        console.log("Ini baris 17 , sudah sampai di sini");
+        a = 18 + 10 ;
+        console.log("Hasil Penjumlahan : " + a);
+        c = 1 * 2 * 3 ;
+        console.log("Hasil Perkalian : " + a);
+    }
+
+    function changeText()
+    {
+        const element = document.getElementById("intro");
+        element.innerHTML = "Sistem Informasi ITS" ;
+    }
+
+    function changeStyle()
+    {
+        const element = document.getElementById("tombol");
+        element.style.color = "red" ;
+        element.style.background = "yellow";
+    }
+
+
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   <style>
     body {
       background-color: #9eae9f;
@@ -180,7 +216,7 @@
         <img src="teamgroup.webp" alt="Logo">
       </div>
 
-      <p class="profile-name">@teamgroupinc</p>
+      <p id="intro" class="profile-name">@teamgroupinc</p>
 
       <div class="social-icons">
         <a href="https://instagram.com/teamgroupinc" target="_blank" rel="noopener noreferrer"><img src="instagram.png" alt="IG"></a>
@@ -189,7 +225,15 @@
         <a href="https://youtube.com/teamgroupinc" target="_blank" rel="noopener noreferrer"><img src="youtube.png" alt="YT"></a>
       </div>
 
-      <a href="https://www.teamgroupinc.com/en/" target="_blank" rel="noopener noreferrer" class="link-btn">
+<div>
+        <button class="btn btn-primary" onclick="showme();">Show Me</button>
+
+        <button class="btn btn-primary" onclick="changeText();">Change Text</button>
+
+        <button class="btn btn-primary" onclick="changeStyle();">Change Style</button>
+</div>
+
+      <a id="tombol" href="https://www.teamgroupinc.com/en/" target="_blank" rel="noopener noreferrer" class="link-btn">
         <span class="link-label">Website</span>
         <span class="link-dots">⋮</span>
       </a>
