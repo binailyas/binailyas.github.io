@@ -502,6 +502,7 @@ h6 {
   }
 }
 
+/* BAGIAN BAWAH WEBSITE */
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
@@ -853,6 +854,13 @@ section,
   padding: 120px 0 60px 0;
   display: flex;
   align-items: center;
+  background: linear-gradient(
+    135deg,
+    #3d4a35 0%,
+    #667160 50%,
+    #7a8a6e 100%
+  ) !important;
+
 }
 
 .hero h1 {
